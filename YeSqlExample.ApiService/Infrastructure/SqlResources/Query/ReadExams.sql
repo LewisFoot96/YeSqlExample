@@ -18,5 +18,3 @@ ExamName
 MaxMark
 FROM Exams
 WHERE Id = @id;
-
-SELECT 
