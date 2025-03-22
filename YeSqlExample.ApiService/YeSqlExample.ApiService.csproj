@@ -11,14 +11,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Aspire.Microsoft.Data.SqlClient" Version="9.1.0" />
     <PackageReference Include="CopySqlFilesToOutputDirectory" Version="1.0.0" />
+    <PackageReference Include="Dapper" Version="2.1.66" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
     <PackageReference Include="YeSql.Net" Version="2.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="DTOs\" />
-    <Folder Include="Application\" />
   </ItemGroup>
 
 </Project>

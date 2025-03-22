@@ -2,7 +2,11 @@ var builder = DistributedApplication.CreateBuilder(args);
 
 var cache = builder.AddRedis("cache");
 
-var apiService = builder.AddProject<Projects.YeSqlExample_ApiService>("apiservice");
+var sql = builder.AddSqlServer("sql");
+var sqldb = sql.AddDatabase("sqldb");
+
+var apiService = builder.AddProject<Projects.YeSqlExample_ApiService>("apiservice")
+    .WithReference(sqldb); ;
 
 builder.AddProject<Projects.YeSqlExample_Web>("webfrontend")
     .WithExternalHttpEndpoints()

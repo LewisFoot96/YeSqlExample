@@ -1,0 +1,16 @@
+﻿using MediatR;
+using YeSqlExample.ApiService.Application.Mappers;
+using YeSqlExample.ApiService.DTOs;
+using YeSqlExample.ApiService.Infrastructure.Respoitories;
+
+namespace YeSqlExample.ApiService.Application.Queries.Handlers;
+
+public class GetExamsQueryHander(IExamRepository repository) : IRequestHandler<GetExamsQuery, List<ExamDto>>
+{
+    public async Task<List<ExamDto>> Handle(GetExamsQuery request, CancellationToken cancellationToken)
+    {
+        var examResult = await repository.GetAllExams();
+
+        return examResult.Select(exam => exam?.ToExamDto()).ToList()!;
+    }
+}
