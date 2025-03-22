@@ -1,5 +1,5 @@
 ﻿using YeSqlExample.ApiService.Domain;
-using YeSqlExample.ApiService.DTOs;
+using YeSqlExample.Shared;
 
 namespace YeSqlExample.ApiService.Application.Mappers;
 

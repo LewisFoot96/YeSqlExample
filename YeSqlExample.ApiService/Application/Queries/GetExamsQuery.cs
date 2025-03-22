@@ -1,5 +1,5 @@
 ﻿using MediatR;
-using YeSqlExample.ApiService.DTOs;
+using YeSqlExample.Shared;
 
 namespace YeSqlExample.ApiService.Application.Queries;
 

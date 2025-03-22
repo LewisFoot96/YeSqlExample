@@ -7,14 +7,14 @@
 -- name: GetExams
 -- Gets all exams
 SELECT 
-Id, 
-ExamName 
+ExamName, 
+MaxMark
 FROM Exams;
 
 -- name: GetExamById
 -- Gets user information
 SELECT 
-Id, 
 ExamName 
+MaxMark
 FROM Exams
 WHERE Id = @id;

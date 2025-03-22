@@ -1,0 +1,46 @@
+﻿@page "/exam"
+@using YeSqlExample.Shared
+@attribute [StreamRendering(true)]
+@attribute [OutputCache(Duration = 5)]
+
+@inject ExamApiClient ExamApi
+
+<PageTitle>Exam</PageTitle>
+
+<h1>Exam</h1>
+
+<p>This component demonstrates showing data loaded from a backend API service.</p>
+
+@if (exams == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Exam Name</th>
+                <th>Max Mark</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var exam in exams)
+            {
+                <tr>
+                    <td>@exam.ExamName</td>
+                    <td>@exam.MaxMark</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private ExamDto[]? exams;
+
+    protected override async Task OnInitializedAsync()
+    {
+        exams = await ExamApi.GetExamsAsync();
+    }
+}

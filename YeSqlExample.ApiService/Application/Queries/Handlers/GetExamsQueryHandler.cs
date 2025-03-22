@@ -1,6 +1,6 @@
 ﻿using MediatR;
 using YeSqlExample.ApiService.Application.Mappers;
-using YeSqlExample.ApiService.DTOs;
+using YeSqlExample.Shared;
 using YeSqlExample.ApiService.Infrastructure.Respoitories;
 
 namespace YeSqlExample.ApiService.Application.Queries.Handlers;
