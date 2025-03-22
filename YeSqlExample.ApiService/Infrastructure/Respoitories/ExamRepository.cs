@@ -32,15 +32,14 @@ public class ExamRepository : IExamRepository
             Console.WriteLine(ex.Message);
         }
 
-        //Validating some sql from a string
+        //Validating some sql from a string to ensure it is in the correct format for YeSqlk=
         var source =
                     """
-                    -- name: GetExamsNew
-                    -- Get exams from the database
-                    SELECTbnfgn 
+                    --No name header
+                    SELECT 
                     ExamName, 
                     MaxMark
-                    FROMfds Exams;
+                    FROM Exams;
                     """;
         YeSqlValidationResult validationResult;
         ISqlCollection sqlStatements = new YeSqlParser().Parse(source, out validationResult);
