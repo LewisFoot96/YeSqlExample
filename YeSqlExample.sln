@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YeSqlExample.AppHost", "YeSqlExample.AppHost\YeSqlExample.AppHost.csproj", "{C17387C7-4C5D-472F-8B8A-E5696C59D842}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YeSqlExample.ServiceDefaults", "YeSqlExample.ServiceDefaults\YeSqlExample.ServiceDefaults.csproj", "{506476EC-8232-4B64-B0F8-8EA821872D0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YeSqlExample.ApiService", "YeSqlExample.ApiService\YeSqlExample.ApiService.csproj", "{4E58B03E-650D-49F1-BB02-A7B2163D2BE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YeSqlExample.Web", "YeSqlExample.Web\YeSqlExample.Web.csproj", "{B1AC8FA1-B568-402F-B14C-DA0683B96CC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YeSqlExample.Tests", "YeSqlExample.Tests\YeSqlExample.Tests.csproj", "{49A59A6C-A0B8-4972-B353-F4150EE99A6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C17387C7-4C5D-472F-8B8A-E5696C59D842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C17387C7-4C5D-472F-8B8A-E5696C59D842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C17387C7-4C5D-472F-8B8A-E5696C59D842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C17387C7-4C5D-472F-8B8A-E5696C59D842}.Release|Any CPU.Build.0 = Release|Any CPU
+		{506476EC-8232-4B64-B0F8-8EA821872D0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{506476EC-8232-4B64-B0F8-8EA821872D0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{506476EC-8232-4B64-B0F8-8EA821872D0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{506476EC-8232-4B64-B0F8-8EA821872D0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E58B03E-650D-49F1-BB02-A7B2163D2BE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E58B03E-650D-49F1-BB02-A7B2163D2BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E58B03E-650D-49F1-BB02-A7B2163D2BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E58B03E-650D-49F1-BB02-A7B2163D2BE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1AC8FA1-B568-402F-B14C-DA0683B96CC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1AC8FA1-B568-402F-B14C-DA0683B96CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1AC8FA1-B568-402F-B14C-DA0683B96CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1AC8FA1-B568-402F-B14C-DA0683B96CC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49A59A6C-A0B8-4972-B353-F4150EE99A6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49A59A6C-A0B8-4972-B353-F4150EE99A6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49A59A6C-A0B8-4972-B353-F4150EE99A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49A59A6C-A0B8-4972-B353-F4150EE99A6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
