@@ -6,6 +6,7 @@
 
 -- name: GetExams
 -- Gets all exams
+DECLARE @test NVARCHAR(10) = 'test';
 SELECT 
 ExamName, 
 MaxMark
