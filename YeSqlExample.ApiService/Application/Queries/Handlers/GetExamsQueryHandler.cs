@@ -9,6 +9,7 @@ public class GetExamsQueryHander(IExamRepository repository) : IRequestHandler<G
 {
     public async Task<List<ExamDto>> Handle(GetExamsQuery request, CancellationToken cancellationToken)
     {
+        string test = "";
         var examResult = await repository.GetAllExams();
 
         return examResult.Select(exam => exam?.ToExamDto()).ToList()!;
