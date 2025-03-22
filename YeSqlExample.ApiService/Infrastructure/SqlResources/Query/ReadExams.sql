@@ -4,23 +4,17 @@
 
 --You should also note that comments that do not use the name: prefix will be ignored by the parser.
 
--- name: GetUsers
--- Gets all users
+-- name: GetExams
+-- Gets all exams
 SELECT 
-id, 
-email 
-FROM users;
+Id, 
+ExamName 
+FROM Exams;
 
--- name: GetUserById
+-- name: GetExamById
 -- Gets user information
 SELECT 
-id, 
-username, 
-email 
-FROM users
-WHERE id = @id;
-
--- name: InsertUser
--- Create user record
-INSERT INTO users (id, username, email)
-VALUES (@id, @username, @email);
+Id, 
+ExamName 
+FROM Exams
+WHERE Id = @id;

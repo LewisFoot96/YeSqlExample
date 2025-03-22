@@ -1,4 +1,6 @@
-﻿namespace YeSqlExample.ApiService.Infrastructure.Respoitories;
+﻿using YeSqlExample.ApiService.Domain;
+
+namespace YeSqlExample.ApiService.Infrastructure.Respoitories;
 
 public interface IExamRepository
 {

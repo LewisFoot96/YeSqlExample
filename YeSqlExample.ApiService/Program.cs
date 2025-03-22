@@ -11,6 +11,12 @@ builder.Services.AddProblemDetails();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
+// Loads the SQL files from a default directory called yesql.
+ISqlCollection sqlStatements = new YeSqlLoader().LoadFromDefaultDirectory();
+// Adds the returned instance as a singleton service.
+builder.Services.AddSingleton<ISqlCollection>(sqlStatements);
+builder.Services.AddControllers();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
